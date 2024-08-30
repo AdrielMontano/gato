@@ -1,0 +1,159 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8D7DA; /* Fondo rosado pastel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.cat {
+    position: relative;
+    width: 150px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.ears {
+    position: absolute;
+    top: -30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ear {
+    width: 50px;
+    height: 50px;
+    background-color: #FFF;
+    border-radius: 50% 50% 0 0;
+    transform: rotate(45deg);
+}
+
+.left-ear {
+    transform: rotate(-45deg);
+}
+
+.right-ear {
+    transform: rotate(45deg);
+}
+
+.face {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #FFF; /* Color blanco para la cara del gatito */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.eyes {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.eye {
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.nose {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #ff6666;
+    border-radius: 50%;
+}
+
+.whiskers {
+    position: absolute;
+    top: 65%;
+    width: 100%;
+}
+
+.whisker {
+    width: 50px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+}
+
+.left-whisker.top {
+    left: 10%;
+    top: -10px;
+    transform: rotate(15deg);
+}
+
+.left-whisker.bottom {
+    left: 10%;
+    top: 10px;
+    transform: rotate(-15deg);
+}
+
+.right-whisker.top {
+    right: 10%;
+    top: -10px;
+    transform: rotate(-15deg);
+}
+
+.right-whisker.bottom {
+    right: 10%;
+    top: 10px;
+    transform: rotate(15deg);
+}
+
+.mouth {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 15px;
+    background-color: transparent;
+    border-bottom: 2px solid #000;
+    border-radius: 0 0 50% 50%;
+}
+
+.body {
+    width: 120px;
+    height: 100px;
+    background-color: #FFF; /* Color blanco para el cuerpo del gatito */
+    border-radius: 60px;
+    position: relative;
+    margin: -20px auto 0; /* Para ajustar debajo de la cabeza */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tail {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #FFF;
+    border-radius: 50%;
+    top: 20px;
+    left: 120px;
+    transform: rotate(45deg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.message {
+    display: none;
+    font-size: 24px;
+    color: #555;
+    margin-top: 20px;
+}
+
